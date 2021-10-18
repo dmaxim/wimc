@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+  wimc-db:
+    env_file:
+      - .env
+    image: mysql:5.7.35
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'wimc'
+      MYSQL_USER: 'wimc-app'
+      MYSQL_PASSWORD: '${appPassword}'
+      MYSQL_ROOT_PASSWORD: '${rootPassword}'
+    ports:
+      - '3306:3306'
+    volumes:
+      - wimc-db:/var/lib/mysql
+volumes:
+  wimc-db:

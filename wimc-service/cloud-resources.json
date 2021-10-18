@@ -1,0 +1,27 @@
+
+    [
+{	
+    "cloudResourceId" : 1,
+    "cloudId" : "/resourcepath/one",
+    "location" : "eastus",
+    "name": "resource-one",
+    "type": "vnet",
+    "notes" : ""
+},
+{
+    "cloudResourceId" : 2,
+    "cloudId" : "/resourcepath/two",
+    "location" : "eastus",
+    "name": "resource-two",
+    "type": "subnet",
+    "notes" : ""
+},
+{
+    "cloudResourceId" : 3,
+    "cloudId" : "/resourcepath/three",
+    "location" : "eastus",
+    "name": "resource-three",
+    "type": "firewall",
+    "notes" : ""
+}
+]
